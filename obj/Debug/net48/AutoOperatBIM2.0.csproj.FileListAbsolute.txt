@@ -4,7 +4,6 @@ C:\Users\weiqixiang\source\repos\AutoOperatBIM2.0\bin\Debug\net48\AutoOperatBIM2
 C:\Users\weiqixiang\source\repos\AutoOperatBIM2.0\bin\Debug\net48\ThoughtWorks.Selenium.Core.dll
 C:\Users\weiqixiang\source\repos\AutoOperatBIM2.0\bin\Debug\net48\WebDriver.Support.dll
 C:\Users\weiqixiang\source\repos\AutoOperatBIM2.0\bin\Debug\net48\WebDriver.dll
-C:\Users\weiqixiang\source\repos\AutoOperatBIM2.0\obj\Debug\net48\AutoOperatBIM2.0.csproj.AssemblyReference.cache
 C:\Users\weiqixiang\source\repos\AutoOperatBIM2.0\obj\Debug\net48\AutoOperatBIM2.0.csproj.SuggestedBindingRedirects.cache
 C:\Users\weiqixiang\source\repos\AutoOperatBIM2.0\obj\Debug\net48\MainWindow.g.cs
 C:\Users\weiqixiang\source\repos\AutoOperatBIM2.0\obj\Debug\net48\App.g.cs

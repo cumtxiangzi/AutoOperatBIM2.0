@@ -47,15 +47,12 @@ namespace AutoOperateBIM2._0
         }
         private void BIM2Button_Click(object sender, RoutedEventArgs e)
         {
-            //AutoOperatBIMPlateForm2("https://bim.sinoma-tianjin.com/", "1739", "110122227");
+
         }
         private void BIM1Button_Click(object sender, RoutedEventArgs e)
         {
-
             operat.startRun();
-            //BIMPlateForm1("http://bim.sinoma-tianjin.com:8080/Login", "1739", "110122227", "1007", "919");
         }
-
 
     }
 }
