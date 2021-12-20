@@ -30,15 +30,16 @@ namespace AutoOperateBIM2._0
 
         }
         /// <summary>
-        /// 开始跑
+        /// 开始运行
         /// </summary>
-        public void startRun()
+        public void startRun(int index)
         {
             //"""运行起来"""
             try
             {
                 running = true;
                 string url = "http://bim.sinoma-tianjin.com:8080/Login";
+                string url2 = "https://bim.sinoma-tianjin.com/";
                 string username = "1739";
                 string password = "110122227";
                 string project_id = "1007";
@@ -59,7 +60,19 @@ namespace AutoOperateBIM2._0
                     chromeDriverService.HideCommandPromptWindow = true;//关闭黑窗口
                     driver = new ChromeDriver(chromeDriverService, opt);
                 }
-                run(url, username, password, project_id, workshop_id); //开始运行
+                if (index == 0) //开始运行
+                {
+                    run0(url, username, password);
+                }
+                else if (index == 1)
+                {
+                    run1(url, username, password, project_id, workshop_id);
+                }
+                else if (index==20)
+                {
+                    run20(url2, username, password);
+                }
+
             }
             catch (Exception)
             {
@@ -72,7 +85,36 @@ namespace AutoOperateBIM2._0
         /// </summary>
         /// <param name="username"></param>
         /// <param name="password"></param>
-        private void run(string url, string accountName, string passWord, string projectCode, string workShopCode)
+        private void run0(string url, string accountName, string passWord)
+        {
+            //# 访问网站
+            driver.Navigate().GoToUrl(url);
+            //#开始进行操作
+            try
+            {
+                driver.Navigate().GoToUrl(url);
+
+                var account = driver.FindElement(By.Name("Account"));
+                account.Clear();
+                account.SendKeys(accountName);
+                Thread.Sleep(500);
+
+                var code = driver.FindElement(By.Name("Password"));
+                code.Clear();
+                code.SendKeys(passWord);
+                Thread.Sleep(500);
+
+                var okButton = driver.FindElement(By.Id("loginbutton"));
+                okButton.Click();
+                Thread.Sleep(500);
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        private void run1(string url, string accountName, string passWord, string projectCode, string workShopCode)
         {
             //# 访问网站
             driver.Navigate().GoToUrl(url);
@@ -203,13 +245,36 @@ namespace AutoOperateBIM2._0
                 var checkPeopleIframe2 = driver.SwitchTo().Frame(checkPeopleIframe); //转到iframe
                 var confirmButton1 = driver.FindElement(By.XPath("/html/body/div/input[2]")); //点击确定发送联系单 记得改为确定，目前是取消按钮
                 confirmButton1.Click();
+                Thread.Sleep(500);
+            }
+            catch (Exception)
+            {
 
+            }
+        }
+        private void run20(string url, string accountName, string passWord)
+        {
+            //# 访问网站
+            driver.Navigate().GoToUrl(url);
+            //#开始进行操作
+            try
+            {
+                driver.Navigate().GoToUrl(url);
+
+                var account = driver.FindElement(By.Name("Account"));
+                account.Clear();
+                account.SendKeys(accountName);
                 Thread.Sleep(500);
 
+                var code = driver.FindElement(By.Name("Password"));
+                code.Clear();
+                code.SendKeys(passWord);
+                Thread.Sleep(500);
 
-                //Thread.Sleep(5000);
-                //driver.Close();
-                //driver.Quit();
+                var okButton = driver.FindElement(By.Id("loginbutton"));
+                okButton.Click();
+                Thread.Sleep(500);
+
             }
             catch (Exception)
             {
@@ -229,7 +294,7 @@ namespace AutoOperateBIM2._0
                 if (driver != null)
                 {
                     driver.Quit();
-                    //# 关闭后切要为None，否则启动报错
+                    //# 关闭后要为None，否则启动报错
                     driver = null;
                 }
             }

@@ -25,7 +25,29 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="BIM2Button" Content="校审发起" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="1" Click="BIM2Button_Click" >
+                <Button x:Name="BIM20Button" Content="登录" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="0" Click="BIM20Button_Click" >
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <Border.Background>LightGray</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="BIM21Button" Content="校审发起" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="1" Click="BIM21Button_Click" >
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <Border.Background>LightGray</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="BIM22Button" Content="关闭浏览器" Margin="5,10,5,10" FontSize="11"  Cursor="Hand" Grid.Column="2" Click="BIM22Button_Click" >
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
                             <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
@@ -47,7 +69,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="BIM0Button" Content="登录" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="0" >
+                <Button x:Name="BIM0Button" Content="登录" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="0" Click="BIM0Button_Click" >
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
                             <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
@@ -59,6 +81,17 @@
                 </Button>
 
                 <Button x:Name="BIM1Button" Content="校审发起" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="1" Click="BIM1Button_Click" >
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <Border.Background>LightGray</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="BIM2Button" Content="关闭浏览器" Margin="5,10,5,10" FontSize="11"  Cursor="Hand" Grid.Column="2" Click="BIM2Button_Click" >
                     <Button.Template >
                         <ControlTemplate TargetType="{x:Type Button}" >
                             <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">

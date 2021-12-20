@@ -45,14 +45,36 @@ namespace AutoOperateBIM2._0
         {
             operat.stopRun();
         }
-        private void BIM2Button_Click(object sender, RoutedEventArgs e)
-        {
 
+        //BIM1.0平台操作
+        private void BIM0Button_Click(object sender, RoutedEventArgs e)
+        {
+            operat.startRun(0);
         }
         private void BIM1Button_Click(object sender, RoutedEventArgs e)
         {
-            operat.startRun();
+            operat.startRun(1);
         }
 
+        private void BIM2Button_Click(object sender, RoutedEventArgs e)
+        {
+            operat.stopRun();
+        }
+
+        //BIM2.0平台操作
+        private void BIM20Button_Click(object sender, RoutedEventArgs e)
+        {
+            operat.startRun(20);
+        }
+
+        private void BIM21Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BIM22Button_Click(object sender, RoutedEventArgs e)
+        {
+            operat.stopRun();
+        }
     }
 }
