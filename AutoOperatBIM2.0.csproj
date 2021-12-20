@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net48</TargetFramework>
+		<RootNamespace>AutoOperatBIM2._0</RootNamespace>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<LangVersion>preview</LangVersion>
+		<ApplicationIcon>winicon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="winicon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Selenium.RC" Version="3.1.0" />
+	  <PackageReference Include="Selenium.Support" Version="4.1.0" />
+	  <PackageReference Include="Selenium.WebDriver" Version="4.1.0" />
+	  <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="96.0.4664.4500" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="logo.png">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Resource>
+	</ItemGroup>
+
+</Project>
