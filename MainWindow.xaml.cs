@@ -76,5 +76,21 @@ namespace AutoOperateBIM2._0
         {
             operat.stopRun();
         }
+
+        //BIM3.0平台操作
+        private void BIM30Button_Click(object sender, RoutedEventArgs e)
+        {
+            operat.startRun(30);
+        }
+
+        private void BIM31Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BIM32Button_Click(object sender, RoutedEventArgs e)
+        {
+            operat.stopRun();
+        }
     }
 }

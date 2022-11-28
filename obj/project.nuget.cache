@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "VdIiS0Hg89H/olWwTvSotEZWFTDxyJM+lIxHiqTBinc6XBixBhF5aQHcap0EgljYaOI6Ii/uBh8xc1hKxo1sIQ==",
+  "dgSpecHash": "J0V+nNgZT64Q5ALDM+88pJSEoWw0vGBk6dYoGzqgI5Qqhudnm9sOrN3k+goRa1ijsxoHt79xljruNmtNpwdS/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\weiqixiang\\source\\repos\\AutoOperatBIM2.0\\AutoOperatBIM2.0.csproj",
+  "projectFilePath": "D:\\工作G盘\\Favorites\\Revit二次开发-2020.3.8\\FFETOOLS开发源码\\源码\\AutoOperatBIM2.0\\AutoOperatBIM2.0.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\weiqixiang\\.nuget\\packages\\selenium.rc\\3.1.0\\selenium.rc.3.1.0.nupkg.sha512",
-    "C:\\Users\\weiqixiang\\.nuget\\packages\\selenium.support\\4.1.0\\selenium.support.4.1.0.nupkg.sha512",
-    "C:\\Users\\weiqixiang\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512",
-    "C:\\Users\\weiqixiang\\.nuget\\packages\\selenium.webdriver.chromedriver\\96.0.4664.4500\\selenium.webdriver.chromedriver.96.0.4664.4500.nupkg.sha512"
+    "C:\\Users\\weiqixiang.TCDRILAN\\.nuget\\packages\\selenium.rc\\3.1.0\\selenium.rc.3.1.0.nupkg.sha512",
+    "C:\\Users\\weiqixiang.TCDRILAN\\.nuget\\packages\\selenium.support\\4.1.0\\selenium.support.4.1.0.nupkg.sha512",
+    "C:\\Users\\weiqixiang.TCDRILAN\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512",
+    "C:\\Users\\weiqixiang.TCDRILAN\\.nuget\\packages\\selenium.webdriver.chromedriver\\96.0.4664.4500\\selenium.webdriver.chromedriver.96.0.4664.4500.nupkg.sha512",
+    "C:\\Users\\weiqixiang.TCDRILAN\\.nuget\\packages\\selenium.webdriver.msedgedriver\\107.0.1418.42\\selenium.webdriver.msedgedriver.107.0.1418.42.nupkg.sha512"
   ],
   "logs": []
 }

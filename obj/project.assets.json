@@ -46,6 +46,12 @@
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
+      },
+      "Selenium.WebDriver.MSEdgeDriver/107.0.1418.42": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.MSEdgeDriver.targets": {}
+        }
       }
     },
     ".NETFramework,Version=v4.8/win7-x86": {
@@ -92,6 +98,12 @@
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
+      "Selenium.WebDriver.MSEdgeDriver/107.0.1418.42": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.MSEdgeDriver.targets": {}
         }
       }
     }
@@ -167,6 +179,24 @@
         "selenium.webdriver.chromedriver.96.0.4664.4500.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
       ]
+    },
+    "Selenium.WebDriver.MSEdgeDriver/107.0.1418.42": {
+      "sha512": "ANp1jS98JS++8MtON6Zz82iszZ8NWh5XVYYM5ZRRph1bv7LLqB/j0KTDJ+Hg5S3dGrdZbn5q6AWdRiIVmMgXVg==",
+      "type": "package",
+      "path": "selenium.webdriver.msedgedriver/107.0.1418.42",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/DefinePropertiesMSEdgeDriver.targets",
+        "build/Selenium.WebDriver.MSEdgeDriver.targets",
+        "driver/linux64/msedgedriver",
+        "driver/mac64/msedgedriver",
+        "driver/win32/msedgedriver.exe",
+        "driver/win64/msedgedriver.exe",
+        "selenium.webdriver.msedgedriver.107.0.1418.42.nupkg.sha512",
+        "selenium.webdriver.msedgedriver.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -174,23 +204,24 @@
       "Selenium.RC >= 3.1.0",
       "Selenium.Support >= 4.1.0",
       "Selenium.WebDriver >= 4.1.0",
-      "Selenium.WebDriver.ChromeDriver >= 96.0.4664.4500"
+      "Selenium.WebDriver.ChromeDriver >= 96.0.4664.4500",
+      "Selenium.WebDriver.MSEdgeDriver >= 107.0.1418.42"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\weiqixiang\\.nuget\\packages\\": {}
+    "C:\\Users\\weiqixiang.TCDRILAN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\weiqixiang\\source\\repos\\AutoOperatBIM2.0\\AutoOperatBIM2.0.csproj",
+      "projectUniqueName": "D:\\工作G盘\\Favorites\\Revit二次开发-2020.3.8\\FFETOOLS开发源码\\源码\\AutoOperatBIM2.0\\AutoOperatBIM2.0.csproj",
       "projectName": "AutoOperatBIM2.0",
-      "projectPath": "C:\\Users\\weiqixiang\\source\\repos\\AutoOperatBIM2.0\\AutoOperatBIM2.0.csproj",
-      "packagesPath": "C:\\Users\\weiqixiang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\weiqixiang\\source\\repos\\AutoOperatBIM2.0\\obj\\",
+      "projectPath": "D:\\工作G盘\\Favorites\\Revit二次开发-2020.3.8\\FFETOOLS开发源码\\源码\\AutoOperatBIM2.0\\AutoOperatBIM2.0.csproj",
+      "packagesPath": "C:\\Users\\weiqixiang.TCDRILAN\\.nuget\\packages\\",
+      "outputPath": "D:\\工作G盘\\Favorites\\Revit二次开发-2020.3.8\\FFETOOLS开发源码\\源码\\AutoOperatBIM2.0\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\weiqixiang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\weiqixiang.TCDRILAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -231,9 +262,13 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[96.0.4664.4500, )"
+          },
+          "Selenium.WebDriver.MSEdgeDriver": {
+            "target": "Package",
+            "version": "[107.0.1418.42, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

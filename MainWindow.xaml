@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoOperateBIM2._0"
         mc:Ignorable="d"
-        Title="自动操作BIM平台" Height="200" Width="300" WindowStartupLocation="CenterScreen"  WindowStyle="SingleBorderWindow"  ResizeMode="NoResize" Loaded="Window_Loaded" Closed="MainForm_Closed" Icon="/logo.png">
+        Title="自动操作BIM平台" Height="300" Width="300" WindowStartupLocation="CenterScreen"  WindowStyle="SingleBorderWindow"  ResizeMode="NoResize" Loaded="Window_Loaded" Closed="MainForm_Closed" Icon="/logo.png">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200*"/>
@@ -14,53 +14,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="150*"/>
             <RowDefinition Height="150*"/>
+            <RowDefinition Height="150*"/>
         </Grid.RowDefinitions>
 
-        <GroupBox Header="BIM2.0平台" Grid.Column="0" Grid.Row="0" Margin="5,5,5,5" BorderBrush="Gray">
-            <Grid >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <Button x:Name="BIM20Button" Content="登录" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="0" Click="BIM20Button_Click" >
-                    <Button.Template >
-                        <ControlTemplate TargetType="{x:Type Button}" >
-                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <Border.Background>LightGray</Border.Background>
-                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-
-                <Button x:Name="BIM21Button" Content="校审发起" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="1" Click="BIM21Button_Click" >
-                    <Button.Template >
-                        <ControlTemplate TargetType="{x:Type Button}" >
-                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <Border.Background>LightGray</Border.Background>
-                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-
-                <Button x:Name="BIM22Button" Content="关闭浏览器" Margin="5,10,5,10" FontSize="11"  Cursor="Hand" Grid.Column="2" Click="BIM22Button_Click" >
-                    <Button.Template >
-                        <ControlTemplate TargetType="{x:Type Button}" >
-                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <Border.Background>LightGray</Border.Background>
-                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-            </Grid>
-        </GroupBox>
-
-        <GroupBox Header="BIM1.0平台" Grid.Column="0" Grid.Row="1" Margin="5,5,5,5" BorderBrush="Gray">
+        <GroupBox Header="BIM1.0平台" Grid.Column="0" Grid.Row="0" Margin="5,5,5,5" BorderBrush="Gray">
             <Grid >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -104,5 +61,94 @@
 
             </Grid>
         </GroupBox>
+
+        <GroupBox Header="BIM2.0平台" Grid.Column="0" Grid.Row="1" Margin="5,5,5,5" BorderBrush="Gray">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="BIM20Button" Content="登录" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="0" Click="BIM20Button_Click" >
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <Border.Background>LightGray</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="BIM21Button" Content="校审发起" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="1" Click="BIM21Button_Click" >
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <Border.Background>LightGray</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="BIM22Button" Content="关闭浏览器" Margin="5,10,5,10" FontSize="11"  Cursor="Hand" Grid.Column="2" Click="BIM22Button_Click" >
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <Border.Background>LightGray</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="BIM3.0平台" Grid.Column="0" Grid.Row="2" Margin="5,5,5,5" BorderBrush="Gray">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="BIM30Button" Content="登录" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="0" Click="BIM30Button_Click">
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <Border.Background>LightGray</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="BIM31Button" Content="校审发起" Margin="5,10,5,10" FontSize="12"  Cursor="Hand" Grid.Column="1" Click="BIM31Button_Click">
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <Border.Background>LightGray</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="BIM32Button" Content="关闭浏览器" Margin="5,10,5,10" FontSize="11"  Cursor="Hand" Grid.Column="2" Click="BIM32Button_Click" >
+                    <Button.Template >
+                        <ControlTemplate TargetType="{x:Type Button}" >
+                            <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <Border.Background>LightGray</Border.Background>
+                                <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
+        </GroupBox>
+        
     </Grid>
 </Window>
