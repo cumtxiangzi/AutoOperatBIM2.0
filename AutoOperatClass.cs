@@ -48,6 +48,7 @@ namespace AutoOperateBIM2._0
                 string project_id = "1007";
                 string workshop_id = "919";
                 string checkPeople = "魏祺祥";
+                string filePath = @"D:\项目设计 模型\1092-都匀上封\801-总降\1092-811-成品\DWG\1092-811-WD-带签名.zip";
 
                 if (driver == null)
                 {
@@ -92,7 +93,7 @@ namespace AutoOperateBIM2._0
                 }
                 else if (index == 30)
                 {
-                    run30(url3, username, password, checkPeople);
+                    run30(url3, username, password, checkPeople,filePath);
                 }
 
             }
@@ -303,7 +304,7 @@ namespace AutoOperateBIM2._0
 
             }
         }
-        private void run30(string url, string accountName, string passWord, string checkPeople)
+        private void run30(string url, string accountName, string passWord, string checkPeople,string filePath)
         {
             //# 访问网站
             driver.Navigate().GoToUrl(url);
@@ -414,7 +415,7 @@ namespace AutoOperateBIM2._0
                 //Thread.Sleep(500);
 
                 var fileSelect = driver.FindElement(By.ClassName("el-upload__input")); //图纸上传
-                fileSelect.SendKeys(@"D:\项目设计 模型\1092-都匀上封\801-总降\1092-811-成品\DWG\1092-811-WD-带签名.zip");
+                fileSelect.SendKeys(filePath);
                 Thread.Sleep(500);
 
                 var fileUpload = driver.FindElement(By.XPath("/html/body/div[1]/div/div[1]/div[2]/div[2]/div/div/section/div[1]/main[1]/div[2]/div/form/div[7]/div[2]/div[3]/table/tbody/tr[2]/td/button[1]"));
